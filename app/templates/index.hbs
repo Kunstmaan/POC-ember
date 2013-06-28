@@ -1,3 +1,7 @@
-hier komt een grafiekske
+{{view App.ChartView valueBinding="model" }}
+
+{{#each item in model}}
+    <li>{{item.name}} {{#linkTo 'stockItem' item}}yow{{/linkTo}}</li>
+{{/each}}
 
 {{#linkTo 'stockItems'}}yow{{/linkTo}}
